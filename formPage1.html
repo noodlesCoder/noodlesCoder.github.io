@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Your file css -->
+    <link rel="stylesheet" href="/custom.css" />
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -58,8 +60,8 @@
           <form method="POST" role="form" class="form-horizontal">
             
             <div class="form-group required">
-            <div class="row">
-                <div class="col-xs-6 nopadding col-xs-6 nopadding">
+            <div class="row nogutter">
+                <div class="col-xs-6 col-xs-6">
                   <label for="contactFirstName1">Contact (1) First Name</label>
                   <input type="text" class="form-control" id="contactFirstName1">
                 </div>
@@ -68,7 +70,7 @@
                   <input type="text" class="form-control" id="contactLastName1">
                 </div>
 				</div>
-                <div class="row">
+                <div class="row nogutter">
                 <div class="col-xs-4 col-xs-8">
                   <label for="relationship1">Relationship</label>
                   <select class="form-control" id="relationship1">
