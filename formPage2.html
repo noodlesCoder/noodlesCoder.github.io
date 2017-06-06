@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <button type="button" class="sidebar-toggle collapsed" data-toggle="collapse" data-target="#sidebar" aria-expanded="false" aria controls="sidebar">
+
+      </button>
+      <a class="navbar-brand" href="/"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/index">Home</a></li>
+        <li class="active"><a href="/">Form</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
+  <div class="wrapper">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <!-- sidebar -->
+        <div class="column col-sm-3 col-xs-1 sidebar-offcanvas" id="sidebar">
+            <ul class="nav" id="menu">
+                <li class="active"><a href="/">Form Page1</a></li>
+                <li><a href="/formPage2">Form Page2</a></li>
+                <li><a href="/formPage3">Form Page3</a></li>
+                <li><a href="/formPage4">Form Page4</a></li>
+            
+            </ul>
+        </div>
+        <!-- /sidebar -->
+
+ 
+    	<div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+        
+       
+  	
+        <!-- main area -->
+        <div class="col-sm-12 col-sm-9">
+          <form method="POST" role="form" class="form-horizontal">
+            
+            <div class="form-group required">
+            <div class="row">
+                <div class="col-xs-6 col-xs-6 padding-right-0">
+                  <label for="contactFirstName1">Contact (1) First Name</label>
+                  <input type="text" class="form-control" id="contactFirstName1">
+                </div>
+ 		<div class="col-xs-6 col-xs-6">           
+                  <label for="contactLastName1">Contact (1) Last Name</label>
+                  <input type="text" class="form-control" id="contactLastName1">
+                </div>
+	    </div>
+            <div class="row">
+                <div class="col-xs-4 col-xs-8">
+                  <label for="relationship1">Relationship</label>
+                  <select class="form-control" id="relationship1">
+    		     <option>Mother</option>
+		     <option>Father</option>
+		     <option>Guardian</option>
+		     <option>Spouse</option>
+		     <option>Self</option>
+		   </select>
+                </div>
+ 		<div class="col-xs-8">           
+                  <label for="contactEmail1">Email Address</label>
+                  <input type="text" class="form-control" id="contactEmail1">
+                </div>
+	     </div>
+             <div class="row">
+                <div class="col-xs-12 col-xs-0 padding-right-0">
+                  <label for="contact1AddressLine1">Address Line 1</label>
+                  <input type="text" class="form-control" id="contact1AddressLine1">
+                </div>
+              </div>
+              <div class="row">
+ 		<div class="col-xs-12 col-xs-0">           
+                  <label for="contact1AddressLine2">Address Line 2</label>
+                  <input type="text" class="form-control" id="contact1AddressLine2">
+                </div>
+	      </div>
+              <div class="row">
+                <div class="col-xs-6 padding-right-0">
+                  <label for="contact1City">City</label>
+                  <input type="text" class="form-control" id="contact1City">
+                </div>
+ 		<div class="col-xs-2">           
+                  <label for="contact1Province">Province</label>
+                  <select class="form-control" id="contact1Province">
+    		    <option>ON</option>
+		    <option>QC</option>
+		    <option>NS</option>
+		    <option>PE</option>
+		    <option>MB</option>
+                    <option>AB</option>
+                    <option>BC</option>
+                    <option>NB</option>
+	            <option>NL</option>
+		  </select>
+                </div>
+		<div class="col-xs-4 padding-right-0">
+                  <label for="contact1PostalCode">Postal Code</label>
+                  <input type="text" class="form-control" id="contact1PostalCode">
+                </div>
+   	      </div>
+              <div class="row">
+                <div class="col-xs-3 col-xs-3 col-xs-6 padding-right-0">
+                  <label for="contact1PhoneType">Phone Type</label>
+                  <select class="form-control" id="contact1PhoneType">
+    		     <option>Mobile</option>
+		     <option>Home</option>
+		     <option>Work</option>
+		  </select>
+                </div>
+ 		<div class="col-xs-3 col-xs-3 col-xs-6">           
+                  <label for="contact1AreaCode">Area Code</label>
+                  <input type="text" class="form-control" id="contact1AreaCode">
+                </div>
+                <div class="col-xs-6">           
+                  <label for="contact1PhoneNumber">Phone Number</label>
+                  <input type="text" class="form-control" id="contact1PhoneNumber">
+                </div>
+	       </div>
+	       <hr />
+	       <div class="row">
+                <div class="col-xs-6 col-xs-6 padding-right-0">
+                  <label for="contact2FirstName">Contact (2) First Name</label>
+                  <input type="text" class="form-control" id="contact2FirstName">
+                </div>
+ 		<div class="col-xs-6 col-xs-6">           
+                  <label for="contact2LastName">Contact (2) Last Name</label>
+                  <input type="text" class="form-control" id="contact2LastName">
+                </div>
+	       </div>
+               <div class="row">
+                <div class="col-xs-4 col-xs-8">
+                  <label for="relationship2">Relationship</label>
+                  <select class="form-control" id="relationship2">
+    		     <option>Mother</option>
+		     <option>Father</option>
+		     <option>Guardian</option>
+		     <option>Spouse</option>
+		     <option>Self</option>
+		   </select>
+                </div>
+ 		<div class="col-xs-8">           
+                  <label for="contactEmail2">Email Address</label>
+                  <input type="text" class="form-control" id="contactEmail2">
+                </div>
+	       </div>
+	       <div class="row">
+                <div class="col-xs-12 col-xs-0 padding-right-0">
+                  <div class="checkbox">
+ 			 <label><input type="checkbox" value="">Same as above</label>
+		  </div>
+                 </div>
+                </div>
+                <div class="row">
+                 <div class="col-xs-12 col-xs-0 padding-right-0">
+                    <label for="contact2AddressLine1">Address Line 1</label>
+                    <input type="text" class="form-control" id="contact2AddressLine1">
+                  </div>
+                </div>
+                <div class="row">
+ 		 <div class="col-xs-12 col-xs-0">           
+                   <label for="contact2AddressLine2">Address Line 2</label>
+                   <input type="text" class="form-control" id="contact2AddressLine2">
+                 </div>
+		</div>
+               <div class="row">
+                <div class="col-xs-6 padding-right-0">
+                  <label for="contact2City">City</label>
+                  <input type="text" class="form-control" id="contact2City">
+                </div>
+ 		<div class="col-xs-2">           
+                  <label for="contact2Province">Province</label>
+                  <select class="form-control" id="contact2Province">
+    		      <option>ON</option>
+		      <option>QC</option>
+		      <option>NS</option>
+		      <option>PE</option>
+		      <option>MB</option>
+                      <option>AB</option>
+                      <option>BC</option>
+                      <option>NB</option>
+	              <option>NL</option>
+		   </select>
+                 </div>
+		 <div class="col-xs-4 padding-right-0">
+                  <label for="contact2PostalCode">Postal Code</label>
+                  <input type="text" class="form-control" id="contact2PostalCode">
+                 </div>
+		</div>
+                <div class="row">
+                 <div class="col-xs-3 col-xs-3 col-xs-6 padding-right-0">
+                    <label for="contact2PhoneType">Phone Type</label>
+                    <select class="form-control" id="contact2PhoneType">
+    			<option>Mobile</option>
+			<option>Home</option>
+			<option>Work</option>
+		     </select>
+                  </div>
+ 		<div class="col-xs-3 col-xs-3 col-xs-6">           
+                   <label for="contact2AreaCode">Area Code</label>
+                   <input type="text" class="form-control" id="contact2AreaCode">
+                </div>
+                <div class="col-xs-6">           
+                   <label for="contact2PhoneNumber">Phone Number</label>
+                   <input type="text" class="form-control" id="contact2PhoneNumber">
+                </div>
+	       </div>
+              </div>
+	     <div class="row">
+              <input type="submit" class="btn btn-default" value="Submit"/>
+	     </div>
+          </form>
+        </div> <!--/.main area-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+  </div>
+</body>
+
+</html>
